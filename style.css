@@ -1,0 +1,53 @@
+#container {
+	width: 828px;
+	height: 315px;
+
+	margin: auto;
+
+	/*border: 5px black solid;*/
+
+	background-image: url("https://a.pomf.cat/udjbcl.png");
+	background-size: 310px;
+	background-repeat: space;
+
+	text-align: center;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: white;
+}
+
+#status {
+	padding-top: 35px;
+	font-size: 40px;
+}
+
+#price {
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+#updated {
+	margin-top: 60px;
+	font-size: 25px;
+}
+
+#updatetime {
+	margin-top: 10px;
+	font-size: 35px;
+}
+
+#container.sale {
+	background-color: green;
+}
+
+#container:not(.sale) {
+	background-color: red;
+}
+
+#container.sale .notsaletext	{
+	display: none;
+}
+
+#container:not(.sale) .saletext	 {
+	display: none;
+}
